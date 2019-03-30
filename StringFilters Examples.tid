@@ -1,0 +1,60 @@
+title: $:/plugins/OokTech/StringFilters/Examples
+
+! Examples of the StringFilters
+
+!!`spliton` filter
+
+`<$list filter='[[this/will/split/on/slashes]spliton[/]]'/>`
+
+<$list filter='[[this/will/split/on/slashes]spliton[/]]'/>
+
+
+!!`joinwith` filter
+
+`<$list filter='this will be joined with slashes +[joinwith[/]]'/>`
+
+<$list filter='this will be joined with slashes +[joinwith[/]]'/>
+
+!!`uppercase` filter
+
+`<$list filter='these will be uppercase words +[uppercase[]]'/>`
+
+<$list filter='these will be uppercase words +[uppercase[]]'/>
+
+!!`lowercase` filter
+
+`<$list filter='THESE WILL BE LOWERCASE WORDS +[lowercase[]]'/>`
+
+<$list filter='THESE WILL BE LOWERCASE WORDS +[lowercase[]]'/>
+
+!!`getprefix` filter
+
+`<$list filter='only the first two letters of each +[getprefix[2]]'/>`
+
+<$list filter='only the first two letters of each +[getprefix[2]]'>
+
+</$list>
+
+with padding:
+
+`<$list filter='only the first two letters of each +[getprefix:0[5]]'/>`
+
+<$list filter='only the first two letters of each +[getprefix:0[5]]'>
+
+</$list>
+
+!!`getsuffix` filter
+
+`<$list filter='only the first two letters of each +[getsuffix[2]]'/>`
+
+<$list filter='only the first two letters of each +[getsuffix[2]]'>
+
+</$list>
+
+with padding:
+
+`<$list filter='only the first two letters of each +[getsuffix:0[5]]'/>`
+
+<$list filter='only the first two letters of each +[getsuffix:0[5]]'>
+
+</$list>

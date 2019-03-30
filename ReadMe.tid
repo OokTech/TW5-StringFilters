@@ -2,6 +2,8 @@ title: $:/plugins/OokTech/StringFilters/readme
 
 This plugin adds a few filters that do string manipulation.
 
+See the [[examples|$:/plugins/OokTech/StringFilters/Examples]]
+
 !!`spliton` filter
 
 Splits every input title on the parameter and returns the result as a list of titles.
@@ -22,5 +24,11 @@ Converts all input titles to all lowercase letters.
 !!`getprefix` filter
 
 returns the fist n characters of each title, where n is the filter parameter.
+Optionally this can pad the output with a character to ensure it is always n
+characters long.
+
+!!`getsuffix` filter
+
+returns the last n characters of each title, where n is the filter parameter.
 Optionally this can pad the output with a character to ensure it is always n
 characters long.
