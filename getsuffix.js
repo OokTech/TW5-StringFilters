@@ -1,9 +1,9 @@
 /*\
-title: $:/plugins/OokTech/StringFilters/getprefix.js
+title: $:/plugins/OokTech/StringFilters/getsuffix.js
 type: application/javascript
 module-type: filteroperator
 
-Recturns the first n characters of each title
+Recturns the last n characters of each title
 
 \*/
 (function(){
@@ -20,10 +20,10 @@ exports.getprefix = function(source,operator,options) {
 	source(function(tiddler,title) {
     let out = ''
     if (operator.suffix) {
-      let tmp = title.slice(0,operator.operand)
+      let tmp = title.slice(-1*operator.operand)
       out = tmp.padStart(operator.operand, operator.suffix)
     } else {
-      out = title.slice(0,operator.operand)
+      out = title.slice(-1*operator.operand)
     }
     results.push(out)
 	});
