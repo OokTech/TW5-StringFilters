@@ -15,7 +15,7 @@ Recturns the last n characters of each title
 /*
 Export our filter function
 */
-exports.getprefix = function(source,operator,options) {
+exports.getsuffix = function(source,operator,options) {
 	let results = [];
 	source(function(tiddler,title) {
     let out = ''
